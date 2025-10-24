@@ -17,6 +17,7 @@ mod servers;
 mod sync;
 mod users;
 mod webhooks;
+mod mtest; // <-- ADICIONE ESTA LINHA
 
 pub fn mount(config: Settings, mut rocket: Rocket<Build>) -> Rocket<Build> {
     let settings = OpenApiSettings::default();
